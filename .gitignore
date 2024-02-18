@@ -1,0 +1,30 @@
+#
+# Excludes
+
+.bsp/
+.history/
+.idea/
+.settings/
+.vscode/
+logs/
+project/target/
+target/
+
+.DS_Store
+.classpath
+.env
+.project
+.mise.toml
+.tool-versions
+Thumbs.db
+desktop.ini
+*.iml
+*.ipr
+*.iws
+*.log
+*.tar
+*.tgz
+*.zip
+
+#
+# Includes

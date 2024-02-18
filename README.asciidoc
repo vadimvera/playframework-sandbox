@@ -1,0 +1,7 @@
+= playframework-sandbox
+:uri-playframework-home: https://www.playframework.com/
+
+https://unlicense.org/[image:https://img.shields.io/badge/license-Unlicense-blue.svg[License]]
+
+{uri-playframework-home}[Play^] is a high-productivity Java and Scala web application framework that integrates components and APIs for modern web application development.
+Play was developed by web developers for web application development.
