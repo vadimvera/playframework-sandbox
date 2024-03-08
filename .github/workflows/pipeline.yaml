@@ -1,0 +1,27 @@
+name: Continuous Integration
+
+env:
+  SBT_OPTS: "-Dsbt.ci=true"
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  compile:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          cache: sbt
+          distribution: temurin
+          java-version: 21
+      - name: Compile Project
+        run: sbt compile
